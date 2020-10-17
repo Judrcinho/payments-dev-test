@@ -1,0 +1,45 @@
+.navigationBar {
+    background-color: black;
+    width: 100%;
+    height: 75px;
+    display: inline-flex;
+    justify-content: space-between;
+
+    h1 {
+        color: white;
+        margin: auto;
+    }
+
+    &__logo {
+        height: inherit;
+        display: inline-flex;
+
+        h1 {
+            margin-left: 5px;
+        }
+
+        &_image {
+            height: inherit;
+            width: auto;
+       }
+    }
+
+    &__links {
+        display: inline-flex;
+        color: white;
+        font-size: 30px;
+
+        &.customers, &.merchants {
+            cursor: pointer;
+            margin: auto 10px;
+            transition: all 0.5s;
+            border-bottom: 2px solid transparent;
+            text-decoration: none;
+
+            &.active_true {
+                color: #ffc107;
+                border-bottom: 2px solid #ffc107;
+            }
+        }
+    }
+}
